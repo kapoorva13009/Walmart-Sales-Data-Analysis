@@ -65,7 +65,7 @@ This project helps me to understand the use of Python, Kaggle, SQL and Power BI 
      - Profit margin analysis by branch and category.
    - **Documentation**: Kept a clear note of each query's objective, approach, and results.
      - Example:
-'''sql
+```sql
        --- Find the differnet payment method and for each payment method find number of transaction and number qty sold:
 
        SELECT
@@ -75,7 +75,7 @@ This project helps me to understand the use of Python, Kaggle, SQL and Power BI 
        FROM walmart_table
        GROUP BY payment_method;
        
-'''
+```
 
 ---
 
