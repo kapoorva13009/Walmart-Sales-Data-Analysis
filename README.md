@@ -39,6 +39,14 @@ This project helps me to understand the use of Python, Kaggle, SQL and Power BI 
 ### 5. Exploring the Data
    - **Goal**: Conducted an initial data exploration to understand data distribution, checked column names, types, and identified potential issues.
    - **Analysis**: Used functions like `.info()`, `.describe()`, and `.head()` to get a quick overview of the data structure and statistics.
+```python
+       #Checking the data
+
+       df.describe()
+       df.info()
+       df.isnull().sum()
+
+```
 
 ### 6. Data Cleaning
    - **Removing Duplicates**: Identified and removed duplicate entries to avoid skewed results.
@@ -46,10 +54,24 @@ This project helps me to understand the use of Python, Kaggle, SQL and Power BI 
    - **Fixed Data Types**: Ensured all columns have consistent data types (e.g., dates as `datetime`, prices as `float`).
    - **Currency Formatting**: Used `.replace()` to handle and format currency values for analysis.
    - **Validation**: Checked for any remaining inconsistencies and verified the cleaned data.
+```python
+
+      #as we see their is $ sign we need to remove it.
+
+      df['unit_price'] = df['unit_price'].str.replace("$", "")
+
+```
 
 ### 7. Feature Engineering
    - **Created New Columns**: Created the `Total Amount` for each transaction by multiplying `unit_price` by `quantity` and added it as a new column.
    - **Enhanced Dataset**: This calculated field will streamline further SQL analysis and aggregation tasks.
+```python
+
+      #Adding a column Total
+
+      df['total'] = df['unit_price'] * df['quantity']
+
+```
 
 ### 8. Loading Data into MySQL database
    - **Setting Connection**: Connecting to MySQL using `sqlalchemy` and `pymysql` , then loading the cleaned data into the database.
