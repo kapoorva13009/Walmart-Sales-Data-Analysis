@@ -53,24 +53,49 @@ This project helps me to understand the use of Python, Kaggle, SQL and Power BI 
 
 ### 8. Loading Data into MySQL database
    - **Setting Connection**: Connecting to MySQL using `sqlalchemy` and `pymysql` , then loading the cleaned data into the database.
-   - **Table Creation**: Set up tables in both MySQL and PostgreSQL using Python SQLAlchemy to automate table creation and data insertion.
-   - **Verification**: Run initial SQL queries to confirm that the data has been loaded accurately.
+   - **Table Creation**: Using Python SQLAlchemy to automate table creation and data insertion in MySQL.
+   - **Verification**: Runnig initial SQL queries to confirm that the data has been loaded accurately.
 
 ### 9. SQL Analysis: Complex Queries and Business Problem Solving
-   - **Business Problem-Solving**: Write and execute complex SQL queries to answer critical business questions, such as:
+   - **Business Problem-Solving**: Executing complex SQL queries to answer critical business questions, such as:
      - Revenue trends across branches and categories.
      - Identifying best-selling product categories.
      - Sales performance by time, city, and payment method.
      - Analyzing peak sales periods and customer buying patterns.
      - Profit margin analysis by branch and category.
-   - **Documentation**: Keep clear notes of each query's objective, approach, and results.
+   - **Documentation**: Kept a clear note of each query's objective, approach, and results.
+     - Example:
+'''sql
+       --- Find the differnet payment method and for each payment method find number of transaction and number qty sold:
 
-### 10. Project Publishing and Documentation
-   - **Documentation**: Maintain well-structured documentation of the entire process in Markdown or a Jupyter Notebook.
-   - **Project Publishing**: Publish the completed project on GitHub or any other version control platform, including:
-     - The `README.md` file (this document).
-     - Jupyter Notebooks (if applicable).
-     - SQL query scripts.
-     - Data files (if possible) or steps to access them.
+       SELECT
+             payment_method,
+             COUNT(total) as number_of_transaction,
+             SUM(quantity) as number_of_quantity
+       FROM walmart_table
+       GROUP BY payment_method;
+       
+'''
 
+---
 
+## Results and Insights
+
+1. **Sales Insights**: Found key categories, branches with highest sales and preferred payment methods.
+2. **Profitability**: Insights into the most profitable product categories and locations.
+3. **Customer Behavior**: Trends in ratings, payment preferences, and peak shopping hours.
+
+---
+
+## License
+
+This project is licensed under the MIT License. 
+
+---
+
+## Acknowledgments
+
+- **Data Source**: Kaggle’s Walmart Sales Dataset
+- **Inspiration**: Walmart’s business case studies on sales and supply chain optimization.
+
+---
