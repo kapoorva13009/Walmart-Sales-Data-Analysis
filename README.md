@@ -1,6 +1,6 @@
 # Walmart-Sales-Data-Analysis
 
-Walmart is a global market leader in Superstore category, diving into its data and gaining insights from it leverage us to understand the business much more and help the company to take more robust and customer centric approch in expanding its business and increasing its Mega Mart outlets.
+Walmart is a global market leader in Supermarket's category, diving into its data and gaining insights from it leverage us to understand the business much more and help the company to take more robust and customer centric approch in expanding its business and increasing its Mega Mart outlets.
 
 ---
 
