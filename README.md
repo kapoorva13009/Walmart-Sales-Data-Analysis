@@ -109,9 +109,13 @@ This project helps me to understand the use of Python, Kaggle, SQL and Power BI 
 
 ---
 
-## License
+## Pwer BI Dashboard
 
-This project is licensed under the MIT License. 
+First Page
+![dashboard 1](https://github.com/kapoorva13009/Walmart-Sales-Data-Analysis/blob/main/Dashboard%201.PNG)
+
+Second Page
+![dashboard 2](https://github.com/kapoorva13009/Walmart-Sales-Data-Analysis/blob/main/Dashboard%202.PNG)
 
 ---
 
